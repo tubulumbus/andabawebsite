@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Hollow Knight Fan Page</title>
+        <link rel="icon" href="https://vignette.wikia.nocookie.net/hollowknight/images/0/0c/Grub.png/revision/latest/scale-to-width-down/340?cb=20170417120822" type="image/gif" sizes="16x16">
+        <style>
+        #navbar {
+          overflow: hidden;
+          background-color: black;
+          padding: 10px 10px;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          z-index: 99;
+        }
+        #navbar a {
+          float: left;
+          color: white;
+          text-align: center;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px;
+          line-height: 25px;
+          border-radius: 4px;
+        }
+        #navbar a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        #navbar-audio {
+        float: right;
+        width:400px;
+        height: 50px
+        }
+
+        body {
+        background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/367520/89c60302eaa33a08d7eb97ba14d40bd39b48da5f.jpg");
+         min-height: 500px;
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+        }
+        body, html {
+        font-family: Helvetica;
+	    height: 100%;
+	    margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        }
+        .title{
+        padding: 80px 0px;
+        }
+         .container {
+        position: relative;
+        }
+        .overlay {
+          color: white;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: black;
+        }
+
+        .container:hover .overlay {
+          opacity: .5;
+        }
+        .text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+        }
+        .about{
+        color: white;
+        background-color: rgba(0,0,51,0.2);
+        text-align: center;
+        padding: 50px 50px;
+        font-size: 20px;
+        }
+        .about h1{
+        font-size: 40px;
+        }
+        .char{
+        background-color: rgba(255,255,255,0.2);
+        color: black;
+        text-align: center;
+        padding: 50px 50px;
+        font-size: 40px;
+        }
+        .review{
+        color: white;
+        background-color: rgba(0,0,51,0.2);
+        text-align: center;
+        padding: 50px 50px;
+        font-size: 20px;
+        }
+        .review h1{
+        font-size: 40px;
+        }
+        .media{
+        color: white;
+        text-align: center;
+        padding: 50px 50px;
+        font-size: 40px;
+        }
+        .media img{
+          padding:1px;
+          border:1px solid grey;
+        }
+        .links{
+        background-color: rgba(255,255,255,0.2);
+        color: black;
+        text-align: center;
+        padding: 50px 50px;
+        font-size: 20px;
+        }
+        .links h1{
+        font-size: 40px;
+        }
+
+        </style>
+    </head>
+    <>
+    <div id="navbar">
+        <a href="#about" input="" type="button" onclick="document.getElementById('about').scrollIntoView();">About</a>
+        <a href="#char" input="" type="button" onclick="document.getElementById('characters').scrollIntoView();">Characters</a>
+        <a href="#review" input="" type="button" onclick="document.getElementById('review').scrollIntoView();">Review</a>
+        <a href="#media" input="" type="button" onclick="document.getElementById('media').scrollIntoView();">Media</a>
+        <a href="#links" input="" type="button" onclick="document.getElementById('links').scrollIntoView();">Links</a>
+        <audio controls>
+            <source src="fKnight.mp3" type="audio/mpeg">
+            Your browser does not support the audio element
+        </audio>
+    </div>
+    <center>
+    <img src="http://www.gamebrain.be/wp-content/uploads/2018/09/Hollow-Knight-810x300.png" alt="Hollow Knight Title" class="title">
+    </center>
+        <section id="about" class="about">
+        <h1>About</h1>
+        <p>Hollow Knight is a 2D, action-adventure Metroidvania game developed by Team Cherry.
+            In this game, you explore the dark, vast land of Hallownest, facing difficult and memorable enemies
+            as you try to put together the reason for why you are there.</p>
+    </section>
+    <section id="char" class="char">
+        <h1>Characters</h1>
+        <center>
+            <div class="container">
+             <img src="https://vignette.wikia.nocookie.net/p__/images/4/4c/HK_Knight.png/revision/latest?cb=20190327150644&path-prefix=protagonist"
+                  alt="Protag" width="500" height="500">
+                <div class="overlay">
+                 <h1>Hollow Knight</h1>
+                </div>
+            </div>
+            <div class="container">
+                <img src="https://vignette.wikia.nocookie.net/hollowknight/images/8/8c/Boss_hornet_02.png/revision/latest?cb=20190910120543&path-prefix=it"
+                     alt="Hornet" width="500" height="500">
+                <div class="overlay">
+                    <h1>Hornet</h1>
+                </div>
+            </div>
+            <div class="container">
+                <img src="https://66.media.tumblr.com/3e587bfc09dd3353f42380f8d5bf913e/23269972b82445e2-4b/s640x960/bd85add7d563c68f4c98e8cdb0897366acdc75ef.png"
+                     alt="Mantis Lords" width="500" height="600">
+                <div class="overlay">
+                    <h1>Mantis Lords</h1>
+                </div>
+            </div>
+            <div class="container">
+                <img src="https://vignette.wikia.nocookie.net/villains/images/c/c9/HollowKnightSoulMaster.png/revision/latest?cb=20180215213356"
+                     alt="Soul Master" width="500" height="500">
+                <div class="overlay">
+                    <h1>Soul Master</h1>
+                </div>
+            </div>
+        </center>
+    </section>
+    <section id="review" class="review">
+        <h1>Review</h1>
+        <p>Hollow Knight is easily one of my favorite games. Besides being an fair yet challenging adventure, the world is incredibly well made.
+            It is fun exploring the nooks and crannies of the world trying to figure out the story of the game while happening upon sudden, exhilarating battles.
+            Besides the gameplay and story, the completely hand-drawn art and beautifully made music is inspiring and sets the atmosphere perfectly.</p>
+    </section>
+    <section id="media" class="media">
+        <center>
+            <h1>Trailer</h1>
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/UAO2urG23S4"></iframe>
+            <h1>Screenshots</h1>
+            <img src="https://i.redd.it/zx8r8b2pv1021.jpg"
+                 alt="HFight" width="800" height="450">
+            <img src="https://www.xboxone-hq.com/images/games/screenshots/2241-hollow-knight-voidheart-edition-screenshot-4-1538285631.jpg"
+                 alt="TFight" width="800" height="450">
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/921419596792670304/55C0689C3646CD9FF93467C2AC564600537F2E37/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+                 alt="rest" width="800" height="450">
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/922547668362584000/51886F8D0BB369FB285EF470607F1AC6E942F24A/"
+                 alt="trap" width="800" height="450">
+            <img src="https://vignette.wikia.nocookie.net/hollowknight/images/c/c4/Map_Artwork.jpg/revision/latest?cb=20170404112913"
+                 alt="map" width="800" height="450">
+        </center>
+    </section>
+    <section id="links" class="links">
+        <h1>Links</h1>
+        <a href="https://teamcherry.com.au/">
+            <img alt="team cherry" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Team_cherry_Logo_Red.png"
+                     width=216" height="180">
+        </a>
+        <a href="https://store.steampowered.com/app/367520/Hollow_Knight/">
+            <img alt="steam" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png"
+                 width=150" height="150">
+        </a>
+        <a href="https://www.reddit.com/r/HollowKnight/">
+            <img alt="reddit" src="https://external-preview.redd.it/iDdntscPf-nfWKqzHRGFmhVxZm4hZgaKe5oyFws-yzA.png?auto=webp&s=38648ef0dc2c3fce76d5e1d8639234d8da0152b2"
+                 width=150" height="150">
+        </a>
+
+    </section>
+    <h4>Andreas Abajian</h4>
+    </body>
+
+
+
+</html>
